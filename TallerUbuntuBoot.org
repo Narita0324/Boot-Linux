@@ -79,110 +79,6 @@ ARQUITECTURA DE COMPUTADORES}
    bloque puede usar la combinación ~C-c C-,~, escoja la opción ~src~
    e indique que es del tipo shell.
 
-* Desarrollo Emacs
-Se sugiere utilizar la opción ~:fontsize
-scriptsize~ para dar formato a la ejecución del comando. Por ejemplo,
-considere:
-
-
-** Comando ~lsb_release~
-   #+begin_src shell
-     lsb_release -a
-   #+end_src
-
-   #+RESULTS: :fontsize scriptsize
-   | Distributor ID: | Ubuntu             |
-   | Description:    | Ubuntu 22.04.4 LTS |
-   | Release:        | 22.04              |
-   | Codename:       | jammy              |
-
-
-** Comando ~lspci~
-
-00:00.0 Host bridge: Intel Corporation Comet Lake-U v1 4c Host Bridge/DRAM Controller (rev 0c)
-00:02.0 VGA compatible controller: Intel Corporation CometLake-U GT2 [UHD Graphics] (rev 02)
-00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem (rev 0c)
-00:08.0 System peripheral: Intel Corporation Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model
-00:12.0 Signal processing controller: Intel Corporation Comet Lake Thermal Subsytem
-00:14.0 USB controller: Intel Corporation Comet Lake PCH-LP USB 3.1 xHCI Host Controller
-00:14.2 RAM memory: Intel Corporation Comet Lake PCH-LP Shared SRAM
-00:14.3 Network controller: Intel Corporation Comet Lake PCH-LP CNVi WiFi
-00:15.0 Serial bus controller: Intel Corporation Serial IO I2C Host Controller
-00:16.0 Communication controller: Intel Corporation Comet Lake Management Engine Interface
-00:17.0 SATA controller: Intel Corporation Comet Lake SATA AHCI Controller
-00:19.0 Serial bus controller: Intel Corporation Comet Lake Serial IO I2C Host Controller
-00:19.2 Communication controller: Intel Corporation Device 02c7
-00:1d.0 PCI bridge: Intel Corporation Comet Lake PCI Express Root Port #13 (rev f0)
-00:1f.0 ISA bridge: Intel Corporation Comet Lake PCH-LP LPC Premium Controller/eSPI Controller
-00:1f.3 Audio device: Intel Corporation Comet Lake PCH-LP cAVS
-00:1f.4 SMBus: Intel Corporation Comet Lake PCH-LP SMBus Host Controller
-00:1f.5 Serial bus controller: Intel Corporation Comet Lake SPI (flash) Controller
-01:00.0 Non-Volatile memory controller: Sandisk Corp PC SN530 NVMe SSD (DRAM-less) (rev 01)
-
-
-** Comando ~lscpu~   
-Architecture:             x86_64
-  CPU op-mode(s):         32-bit, 64-bit
-  Address sizes:          39 bits physical, 48 bits virtual
-  Byte Order:             Little Endian
-CPU(s):                   8
-  On-line CPU(s) list:    0-7
-Vendor ID:                GenuineIntel
-  Model name:             Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
-    CPU family:           6
-    Model:                142
-    Thread(s) per core:   2
-    Core(s) per socket:   4
-    Socket(s):            1
-    Stepping:             12
-    CPU(s) scaling MHz:   29%
-    CPU max MHz:          4200.0000
-    CPU min MHz:          400.0000
-    BogoMIPS:             4199.88
-    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge m
-                          ca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 s
-                          s ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc 
-                          art arch_perfmon pebs bts rep_good nopl xtopology nons
-                          top_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor 
-                          ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid 
-                          sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer a
-                          es xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpu
-                          id_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_sh
-                          adow flexpriority ept vpid ept_ad fsgsbase tsc_adjust 
-                          sgx bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx sm
-                          ap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves 
-                          dtherm ida arat pln pts hwp hwp_notify hwp_act_window 
-                          hwp_epp vnmi md_clear flush_l1d arch_capabilities
-Virtualization features:  
-  Virtualization:         VT-x
-Caches (sum of all):      
-  L1d:                    128 KiB (4 instances)
-  L1i:                    128 KiB (4 instances)
-  L2:                     1 MiB (4 instances)
-  L3:                     6 MiB (1 instance)
-NUMA:                     
-  NUMA node(s):           1
-  NUMA node0 CPU(s):      0-7
-Vulnerabilities:          
-  Gather data sampling:   Vulnerable
-  Ghostwrite:             Not affected
-  Itlb multihit:          KVM: Mitigation: Split huge pages
-  L1tf:                   Not affected
-  Mds:                    Not affected
-  Meltdown:               Not affected
-  Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
-  Reg file data sampling: Not affected
-  Retbleed:               Mitigation; Enhanced IBRS
-  Spec rstack overflow:   Not affected
-  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prct
-                          l
-  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointe
-                          r sanitization
-  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditiona
-                          l; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
-  Srbds:                  Mitigation; Microcode
-  Tsx async abort:        Not affected
-
 * Desarrollo Capturas
 ![imagen](lsb_release.png)
 ![imagen](lscpu.png)
@@ -192,9 +88,9 @@ Vulnerabilities:
 * Consulta
 Describa que hacen y para qué sirven los comandos utilizados en la práctica
 
-**`lscpu`**: muestra información del **procesador** (arquitectura, núcleos, modelo).
-**`lsb_release -a`**: muestra datos de la **distribución de Linux** y su versión.
-**`lspci`**: lista el **hardware interno** conectado al bus PCI (tarjeta gráfica, red, audio, etc.).
+lscpu`**: muestra información del **procesador** (arquitectura, núcleos, modelo).
+`lsb_release -a`**: muestra datos de la **distribución de Linux** y su versión.
+`lspci`**: lista el **hardware interno** conectado al bus PCI (tarjeta gráfica, red, audio, etc.).
 
 
 * Footnotes
@@ -205,4 +101,5 @@ reconoce o acepta para el /Target System/
 [fn:1]Si no respalda el código, no podrá arrancar el disco luego de
 reiniciar. Más información en: [[https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html
  ][https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html]]
+
 
