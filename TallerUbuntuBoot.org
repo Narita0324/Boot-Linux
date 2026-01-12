@@ -80,9 +80,9 @@ ARQUITECTURA DE COMPUTADORES}
    e indique que es del tipo shell.
 
 * Desarrollo Capturas
-![imagen](lsb_release.png)
-![imagen](lscpu.png)
-![imagen](lspci.png)
+![image](lsb_release.png)
+![imagen(lscpu.png)
+![image](lspci.png)
 
 
 * Consulta
@@ -101,5 +101,6 @@ reconoce o acepta para el /Target System/
 [fn:1]Si no respalda el código, no podrá arrancar el disco luego de
 reiniciar. Más información en: [[https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html
  ][https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html]]
+
 
 
