@@ -79,20 +79,33 @@ ARQUITECTURA DE COMPUTADORES}
    bloque puede usar la combinación ~C-c C-,~, escoja la opción ~src~
    e indique que es del tipo shell.
 
-* Desarrollo Capturas
-![image](lsb_release.png)
-![imagen(lscpu.png)
-![image](lspci.png)
+# Desarrollo de la práctica
 
+## Capturas de pantalla
 
-* Consulta
-Describa que hacen y para qué sirven los comandos utilizados en la práctica
+### Información de la distribución
+![lsb_release](lsb_release.png)
 
-lscpu`**: muestra información del **procesador** (arquitectura, núcleos, modelo).
-`lsb_release -a`**: muestra datos de la **distribución de Linux** y su versión.
-`lspci`**: lista el **hardware interno** conectado al bus PCI (tarjeta gráfica, red, audio, etc.).
+### Información del procesador
+![lscpu](lscpu.png)
 
+### Dispositivos PCI
+![lspci](lspci.png)
 
+---
+
+## Consulta
+
+### ¿Para qué sirven los comandos utilizados?
+
+**`lscpu`**  
+Muestra información detallada del procesador del sistema, como la arquitectura, el número de núcleos, hilos, modelo y capacidades soportadas. Se utiliza para conocer las características y el rendimiento del CPU.
+
+**`lsb_release -a`**  
+Muestra información sobre la distribución de Linux instalada, incluyendo el nombre, versión, identificador y nombre en clave. Es útil para identificar el sistema operativo y su compatibilidad con software.
+
+**`lspci`**  
+Lista los dispositivos de hardware conectados al bus PCI, como la tarjeta gráfica, adaptadores de red y controladores de audio. Se emplea para verificar y diagnosticar el hardware interno del equipo.
 * Footnotes
 [fn:2]Dependiendo de las características de su computador debe
 verificar si al crear el medio booteable para Ubuntu, su sistema
@@ -101,6 +114,7 @@ reconoce o acepta para el /Target System/
 [fn:1]Si no respalda el código, no podrá arrancar el disco luego de
 reiniciar. Más información en: [[https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html
  ][https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html]]
+
 
 
 
