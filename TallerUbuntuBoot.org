@@ -192,9 +192,9 @@ Vulnerabilities:
 * Consulta
 Describa que hacen y para qué sirven los comandos utilizados en la práctica
 
-* **`lscpu`**: muestra información del **procesador** (arquitectura, núcleos, modelo).
-* **`lsb_release -a`**: muestra datos de la **distribución de Linux** y su versión.
-* **`lspci`**: lista el **hardware interno** conectado al bus PCI (tarjeta gráfica, red, audio, etc.).
+**`lscpu`**: muestra información del **procesador** (arquitectura, núcleos, modelo).
+**`lsb_release -a`**: muestra datos de la **distribución de Linux** y su versión.
+**`lspci`**: lista el **hardware interno** conectado al bus PCI (tarjeta gráfica, red, audio, etc.).
 
 
 * Footnotes
@@ -205,3 +205,4 @@ reconoce o acepta para el /Target System/
 [fn:1]Si no respalda el código, no podrá arrancar el disco luego de
 reiniciar. Más información en: [[https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html
  ][https://www.partitionwizard.com/disk-recovery/bitlocker-recovery-key-bypass.html]]
+
